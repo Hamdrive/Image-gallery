@@ -8,7 +8,6 @@
   background-color: whitesmoke;
 }
 
-
 .topbar {
   display: flex;
   flex-direction: column;
@@ -42,14 +41,6 @@
   margin: 0 auto;
   overflow-y: hidden;
 }
-
-/* .image-tall{
-  grid-row: span 2 / 4;
-}
-
-.image-wide{
-  grid-column: span 2 / 4;
-} */
 
 .image-regular {
   display: flex;
@@ -86,7 +77,6 @@
   max-width: 60%;
   max-height: 100%;
   margin: 1rem 0;
-  /* margin-left: 10rem; */
 }
 
 .modalimg img {

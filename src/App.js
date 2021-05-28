@@ -2,7 +2,6 @@ import {useState} from "react"
 import MainPage from './components/MainPage';
 import TopBar from "./components/TopBar";
 import Modal from "./components/Modal";
-import Loader from "./components/Loader";
 
 function App() {
   const [isEnlarged, setIsEnlarged] = useState(false)
