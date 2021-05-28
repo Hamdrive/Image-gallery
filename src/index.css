@@ -1,3 +1,141 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.main{
+  background-color: whitesmoke;
+}
+
+
+.topbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: xx-large;
+  text-align: center;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  background-color: whitesmoke;
+}
+
+.topbartext{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.topbartext p{
+  margin-top: 0.5rem;
+}
+
+.photo-grid {
+  max-width: 65rem;
+  margin-top: 5rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: 500px;
+  margin: 0 auto;
+  overflow-y: hidden;
+}
+
+/* .image-tall{
+  grid-row: span 2 / 4;
+}
+
+.image-wide{
+  grid-column: span 2 / 4;
+} */
+
+.image-regular {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.modalbkg {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  background-color: white;
+  max-width: 75%;
+  max-height: 90%;
+}
+
+.modalimg {
+  display: flex;
+  max-width: 60%;
+  max-height: 100%;
+  margin: 1rem 0;
+  /* margin-left: 10rem; */
+}
+
+.modalimg img {
+  display: block;
+  margin: auto auto;
+  max-width: 90%;
+  max-height: 100%;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.imginfo {
+  display: flex;
+  flex-direction: column;
+  margin: auto 2rem auto 0;
+  max-width: 40%;
+}
+
+.desc {
+  padding: 0.5rem 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: larger;
+}
+
+.loader {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.lds-dual-ring {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #000;
+  border-color: #000 transparent #000 transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
