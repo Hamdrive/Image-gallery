@@ -24,8 +24,6 @@ function MainPage({ setIsEnlarged, setImgInfo }) {
     setImages([...images, ...response]);
   };
 
-  //next={fetchImages()}
-
   return (
     <>
       <InfiniteScroll style={{overflow: "hidden", marginTop: "5rem"}} scrollThreshold={0.99} dataLength={images.length} next={()=> fetchImages()} hasMore={true} loader={<Loader />}>
