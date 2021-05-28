@@ -27,7 +27,7 @@ function MainPage({ setIsEnlarged, setImgInfo }) {
   //next={fetchImages()}
 
   return (
-    <div>
+    <>
       <InfiniteScroll style={{overflow: "hidden", marginTop: "5rem"}} scrollThreshold={0.99} dataLength={images.length} next={()=> fetchImages()} hasMore={true} loader={<Loader />}>
         <div className="photo-grid">
           {images.map((image) => (
@@ -45,7 +45,7 @@ function MainPage({ setIsEnlarged, setImgInfo }) {
           ))}
         </div>
       </InfiniteScroll>
-    </div>
+    </>
   );
 }
 
